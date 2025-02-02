@@ -24,7 +24,7 @@ export default function Header() {
 		console.log(file.secure_url);
 		setImageURL(file.secure_url);
 
-		const file1 = await fetch('http://127.0.0.1:5000/predict', {
+		const file1 = await fetch('https://image-classifier-waste.onrender.com:5000/predict', {
 			method: 'POST',
 			headers: {
 				'Content-type': 'application/json',
